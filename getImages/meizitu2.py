@@ -45,7 +45,6 @@ def get_img():
     # proxies = get_random_ip(get_ip_list())
     response = requests.get(_url, headers=header)
     soup = BeautifulSoup(response.text, features='lxml')
-    # body = soup.body
     # 倒数第二项为最大的页数
     max_page = int(soup.find('div', class_='pagenavi').find_all('a')[-2].text)
     index = 1
