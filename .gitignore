@@ -1,0 +1,8 @@
+.pyc
+*.idea
+*.xml
+*.xls
+*.spec
+dist
+build
+**/Images
